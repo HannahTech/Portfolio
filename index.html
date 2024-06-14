@@ -16,6 +16,46 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <style>
+      div.gallery {
+        width: 90% !important;
+        height: auto;
+      }
+      .desc {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .image {
+        flex: 2;
+        max-width: 50%;
+        margin: 0 20px;
+      }
+
+      .image img {
+        max-width: 100%;
+        height: 100%;
+      }
+
+      .text {
+        flex: 1;
+        font-size: 16px;
+      }
+
+      .underline {
+        position: relative;
+      }
+
+      .underline::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px dotted rgb(145, 145, 145);
+      }
+    </style>
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -112,112 +152,224 @@
           <h2 class="major">Projects</h2>
           <div class="Project_images">
             <div class="gallery">
-              <div class="bold_desc">Full Stack Recommendation Project</div>
+              <div class="bold_desc">Detecting Fraudulent Job Postings</div>
+
               <div class="desc">
-                One day, searching for a watch band on Shein, I pondered the
-                differences between expensive and cheap products. Consequently,
-                I wrote code to identify the most crucial factor and generate
-                recommendations
-                <p>
-                  <a
-                    class="git"
-                    href="https://github.com/HannahTech/Full-Stack-Recommendation"
-                    target="_blank"
-                    >GitHub Repository</a
-                  >
-                </p>
+                <div class="text">
+                  Oheal is a cutting-edge health app to streamline medical care.
+                  Users can schedule
+                  <span class="underline">appointments</span> with doctors and
+                  specialists, access
+                  <span class="underline">test</span> results and records, and
+                  <span class="underline">message</span>
+                  healthcare providers directly. The app also manages
+                  <span class="underline">medications</span>, offering reminders
+                  for optimal intake times.
+                  <span class="underline">Utilizing AI</span>, Oheal analyzes
+                  user data to suggest potential health issues and prevents
+                  misdiagnoses by
+                  <span class="underline">comparing symptoms</span>
+                  with similar cases.
+                  <p>
+                    <a class="git" target="_blank">Startup Project</a>
+                  </p>
+                </div>
+                <div class="image">
+                  <img src="images/oheal.jpg" alt="Project Image" />
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery">
+              <div class="bold_desc">Detecting Fraudulent Job Postings</div>
+
+              <div class="desc">
+                <div class="text">
+                  This project uses a
+                  <span class="underline">RandomForestClassifier</span> to
+                  detect fraudulent job postings. Preprocessed data is
+                  transformed with
+                  <span class="underline">TfidfVectorizer</span> and split into
+                  training and testing sets. A pipeline is optimized using
+                  <span class="underline">GridSearchCV</span>. The best model is
+                  saved and deployed in a
+                  <span class="underline">Flask app</span>, allowing users to
+                  input job details and receive authenticity predictions.
+                  <p>
+                    <a
+                      class="git"
+                      href="https://github.com/HannahTech/fake_job_detector"
+                      target="_blank"
+                      >GitHub Repository</a
+                    >
+                  </p>
+                </div>
+                <div class="image">
+                  <img src="images/safehire.png" alt="Project Image" />
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery">
+              <div class="bold_desc">Full Stack Recommendation Project</div>
+
+              <div class="desc">
+                <div class="text">
+                  extracting product details by web scraping of Shein website
+                  for Apple Watch bands. Uses libraries like
+                  <span class="underline">requests</span> and
+                  <span class="underline">BeautifulSoup</span> for web scraping,
+                  <span class="underline">Spacy</span> for natural language
+                  processing to identify materials, and stores data in both
+                  SQLite databases and CSV files. Visualizations with
+                  <span class="underline">Matplotlib</span> and
+                  <span class="underline">Seaborn</span>. Offering insights into
+                  product characteristics and trends.
+                  <p>
+                    <a
+                      class="git"
+                      href="https://github.com/HannahTech/Full-Stack-Recommendation"
+                      target="_blank"
+                      >GitHub Repository</a
+                    >
+                  </p>
+                </div>
+                <div class="image">
+                  <img src="images/fullstack.png" alt="Project Image" />
+                </div>
               </div>
             </div>
             <div class="gallery">
               <div class="bold_desc">AWS Business Card Reader</div>
               <div class="desc">
-                Users upload card images, AWS Rekognition extracts text, and AWS
-                Comprehend categorizes it. The organized data is stored in
-                DynamoDB, allowing users to query and edit business card
-                information seamlessly
-                <p>
-                  <a
-                    class="git"
-                    href="https://github.com/HannahTech/AWS-Business-Card-Reader"
-                    target="_blank"
-                    >GitHub Repository</a
+                <div class="text">
+                  Users upload card images,<span class="underline"
+                    >AWS_Rekognition</span
                   >
-                </p>
+                  extracts text, and
+                  <span class="underline">AWS_Comprehend</span> categorizes it.
+                  The organized data is stored in
+                  <span class="underline">DynamoDB</span>, allowing users to
+                  query and edit business card information seamlessly
+                  <p>
+                    <a
+                      class="git"
+                      href="https://github.com/HannahTech/AWS-Business-Card-Reader"
+                      target="_blank"
+                      >GitHub Repository</a
+                    >
+                  </p>
+                </div>
+                <div class="image">
+                  <img src="images/aws_card.png" alt="Project Image" />
+                </div>
               </div>
             </div>
             <div class="gallery">
               <div class="bold_desc">Amazon Review Sentiment</div>
               <div class="desc">
-                Demonstrated substantial efforts in enhancing sentiment analysis
-                for Amazon reviews by implementing three methods and training
-                machine learning models. Evidenced improvements in model
-                accuracy post-introduction of sentiment-adjusted ratings,
-                optimizing customer sentiment interpretation in both general and
-                sampled datasets
-                <p>
-                  <a
-                    class="git"
-                    href="https://github.com/HannahTech/Amazon-Review-Sentiment"
-                    target="_blank"
-                    >GitHub Repository</a
-                  >
-                </p>
+                <div class="text">
+                  This study enhanced sentiment analysis of Amazon reviews using
+                  <span class="underline">NLP</span>,
+                  <span class="underline">TF-IDF</span>, and comparing
+                  <span class="underline">VADER</span>,
+                  <span class="underline">TextBlob</span> , and
+                  <span class="underline">SentiWordNet</span>. By integrating
+                  these methods and adjusting ratings, it improved accuracy in
+                  interpreting customer sentiments across diverse datasets.
+                  <p>
+                    <a
+                      class="git"
+                      href="https://github.com/HannahTech/Amazon-Review-Sentiment"
+                      target="_blank"
+                      >GitHub Repository</a
+                    >
+                  </p>
+                </div>
+                <div class="image">
+                  <img src="images/sentiment.png" alt="Project Image" />
+                </div>
               </div>
             </div>
             <div class="gallery">
               <div class="bold_desc">Recommender System</div>
               <div class="desc">
-                Developed Python scripts for personalized content
-                recommendations: "recipes_recommender" uses the Apriori
-                algorithm to suggest recipes based on cuisine preferences, while
-                "songs_recommender" employs TF-IDF and cosine similarity for
-                song recommendations. Demonstrates expertise in data processing,
-                recommendation algorithms, and text analysis
-                <p>
-                  <a
-                    class="git"
-                    href="https://github.com/HannahTech/Recommender-System"
-                    target="_blank"
-                    >GitHub Repository</a
-                  >
-                </p>
+                <div class="text">
+                  Using the <span class="underline">Apriori</span> algorithm for
+                  cuisine-based recipe suggestions, and employing
+                  <span class="underline">TF-IDF</span> and
+                  <span class="underline">cosine similarity</span> for song
+                  recommendations. Demonstrated expertise in data processing,
+                  <span class="underline">recommendation</span> algorithms, and
+                  text analysis by cleaning data, implementing algorithms, and
+                  generating personalized recommendations through interactive
+                  user prompts.
+                  <p>
+                    <a
+                      class="git"
+                      href="https://github.com/HannahTech/Recommender-System"
+                      target="_blank"
+                      >GitHub Repository</a
+                    >
+                  </p>
+                </div>
+                <div class="image">
+                  <img src="images/recomender.png" alt="Project Image" />
+                </div>
               </div>
             </div>
             <div class="gallery">
               <div class="bold_desc">CoffeeBotClassifier</div>
               <div class="desc">
-                Merged JSON datasets for chatbot intent classification,
-                investing substantial efforts in meticulous preprocessing and
-                model optimization. Attained 100% accuracy over 500 and 1000
-                epochs, showcasing a commitment to excellence in TensorFlow,
-                Keras, and scikit-learn. Demonstrated proficiency in NLP,
-                emphasizing a dedication to achieving optimal model performance
-                <p>
-                  <a
-                    class="git"
-                    href="https://github.com/HannahTech/CoffeeBot-Classifier"
-                    target="_blank"
-                    >GitHub Repository</a
-                  >
-                </p>
+                <div class="text">
+                  Merged JSON datasets for
+                  <span class="underline">chatbot </span>intent classification,
+                  investing substantial efforts in meticulous preprocessing and
+                  model optimization. Attained 100% accuracy over 500 and 1000
+                  epochs, showcasing a commitment to excellence in
+                  <span class="underline">TensorFlow</span>,
+                  <span class="underline">Keras</span>, and
+                  <span class="underline">scikit-learn</span>. Demonstrated
+                  proficiency in <span class="underline">NLP</span>, emphasizing
+                  a dedication to achieving optimal model performance
+                  <p>
+                    <a
+                      class="git"
+                      href="https://github.com/HannahTech/CoffeeBot-Classifier"
+                      target="_blank"
+                      >GitHub Repository</a
+                    >
+                  </p>
+                </div>
+                <div class="image">
+                  <img src="images/chatbot.png" alt="Project Image" />
+                </div>
               </div>
             </div>
             <div class="gallery">
               <div class="bold_desc">Twitter Sentiment Classification</div>
               <div class="desc">
-                Developed a deep learning model (LSTM with Conv1D) for sentiment
-                analysis, Optimized the model using hyperparameter tuning,
-                resulting in a 5% accuracy improvement (from 86.91% to 89.57%),
-                User insert one comment on webApp by Flask and after submitting
-                it shows one happy, natural or sad emoji
-                <p>
-                  <a
-                    class="git"
-                    href="https://github.com/HannahTech/Sentiment-Tweeter-Web-App"
-                    target="_blank"
-                    >GitHub Repository</a
-                  >
-                </p>
+                <div class="text">
+                  Developed a deep learning model
+                  <span class="underline">LSTM with Conv1D</span> for sentiment
+                  analysis, Optimized the model using
+                  <span class="underline">hyperparameter</span> tuning,
+                  resulting in a 5% accuracy improvement (from 86.91% to
+                  89.57%), User insert one comment on webApp by
+                  <span class="underline">Flask</span> and after submitting it
+                  shows one happy, natural or sad emoji
+                  <p>
+                    <a
+                      class="git"
+                      href="https://github.com/HannahTech/Sentiment-Tweeter-Web-App"
+                      target="_blank"
+                      >GitHub Repository</a
+                    >
+                  </p>
+                </div>
+                <div class="image">
+                  <img src="images/twitter.jpeg" alt="Project Image" />
+                </div>
               </div>
             </div>
             <div class="gallery">
@@ -225,65 +377,87 @@
                 Handwrite detection by several methods
               </div>
               <div class="desc">
-                Handwrite detection to predict handwrite text by using
-                unsupervised algorithms and Neural networks
-                <p>
-                  <a
-                    class="git"
-                    href="https://github.com/HannahTech/"
-                    target="_blank"
-                    >GitHub Repository</a
-                  >
-                </p>
+                <div class="text">
+                  Handwriting detection for predicting handwritten text using
+                  <span class="underline">unsupervised</span> algorithms and
+                  <span class="underline">neural</span>
+                  <span class="underline">networks</span>, combining pattern
+                  identification with neural processing to enhance accuracy and
+                  recognize diverse handwriting styles effectively.
+
+                  <p>
+                    <a
+                      class="git"
+                      href="https://github.com/HannahTech/"
+                      target="_blank"
+                      >GitHub Repository</a
+                    >
+                  </p>
+                </div>
+                <div class="image">
+                  <img src="images/handwrite.png" alt="Project Image" />
+                </div>
               </div>
             </div>
             <div class="gallery">
               <div class="bold_desc">SentimentAnalysis IMDb</div>
               <div class="desc">
-                Implemented a sentiment analysis project using NLP on an IMDb
-                movie review dataset. Developed models including a supervised
-                deep learning model (CNN and LSTM), an unsupervised autoencoder,
-                and a pre-trained BERT model, achieving insights into sentiment
-                classification and feature extraction.
+                <div class="text">
+                  Implemented a sentiment analysis project using
+                  <span class="underline">NLP</span> on an IMDb movie review
+                  dataset. Developed models including a
+                  <span class="underline">supervised</span>
+                  deep learning model
+                  <span class="underline">CNN and LSTM</span>, an unsupervised
+                  <span class="underline"> autoencoder</span> , and a
+                  pre-trained <span class="underline">BERT</span> model,
+                  achieving insights into sentiment classification and feature
+                  extraction.
 
-                <p>
-                  <a
-                    class="git"
-                    href="https://github.com/HannahTech/SentimentAnalysis-IMDb"
-                    target="_blank"
-                    >GitHub Repository</a
-                  >
-                </p>
+                  <p>
+                    <a
+                      class="git"
+                      href="https://github.com/HannahTech/SentimentAnalysis-IMDb"
+                      target="_blank"
+                      >GitHub Repository</a
+                    >
+                  </p>
+                </div>
+                <div class="image">
+                  <img src="images/IMDB.png" alt="Project Image" />
+                </div>
               </div>
             </div>
             <div class="gallery">
               <div class="bold_desc">Facial recognition by deep learning</div>
               <div class="desc">
-                Facial recognition to predict or transfer images with NLP and
-                Deep learning
-                <p>
-                  <a
-                    class="git"
-                    href="https://github.com/HannahTech/Some-Projects"
-                    target="_blank"
-                    >GitHub Repository</a
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="gallery">
-              <div class="bold_desc">Make a real store android app</div>
-              <div class="desc">
-                One real store mobile app, that design with android for showing
-                images and map and ...
-                <p>
-                  <a
-                    class="git"
-                    href="https://github.com/HannahTech/"
-                    target="_blank"
-                    >GitHub Repository</a
-                  >
-                </p>
+                <div class="text">
+                  Developed a face recognition system achieving 86.21% accuracy
+                  on test data. Used <span class="underline">PCA</span> for
+                  dimensionality reduction and
+                  <span class="underline">K-Means</span> for clustering,
+                  optimizing clusters with silhouette scores. Achieved 98.5%
+                  accuracy with
+                  <span class="underline">logistic regression</span> and 100%
+                  with <span class="underline">neural networks</span> using
+                  K-Means labels. Evaluated
+                  <span class="underline">Gaussian</span>
+                  <span class="underline">Mixture</span
+                  ><span class="underline">Models</span>
+
+                  (GMM) using AIC and BIC for model comparison.
+                  <p>
+                    <a
+                      class="git"
+                      href="https://github.com/HannahTech/Some-Projects"
+                      target="_blank"
+                      >GitHub Repository</a
+                    >
+                  </p>
+                </div>
+                <div class="image">
+                  <img src="images/facial.png" alt="Project Image" />
+                </div>
               </div>
             </div>
           </div>
