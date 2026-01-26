@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <canvas id="holo-canvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="projects.html">Projects</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container projects">
+      <div class="projects-grid">
+        <img class="projects-icon" src="images/1.png" alt="AI icon" />
+        <div class="projects-text">
+          <h2>AI &amp; Agents</h2>
+          <p>LLMs, Automation,<br />and Intelligence</p>
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/1-1-p.png"
+            alt="AI project"
+            data-title="AI Resume Architect"
+            data-desc="An agentic workflow using Google Gemini API and Web Scraping to dynamically optimize resumes based on LinkedIn profiles and job descriptions."
+            data-core="Python, Gemini API, Selenium, BeautifulSoup"
+            data-link="https://github.com/HannahTech/AI-Resume-Architect"
+          />
+          <span class="projects-thumb-title">AI Resume Architect</span>
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/1-2-p.png"
+            alt="AI project"
+            data-title="AI Healthcare Assistant"
+            data-desc="Oheal is a cutting-edge health app to streamline medical care. Users can schedule appointments with doctors and specialists, access test results and records, and message healthcare providers directly. The app also manages medications, offering reminders for optimal intake times. Utilizing AI, Oheal analyzes user data to suggest potential health issues and prevents misdiagnoses by comparing symptoms with similar cases."
+            data-core="Python, NLP, Scikit-learn, Flask"
+            data-link="https://github.com/HannahTech?tab=repositories"
+          />
+          <span class="projects-thumb-title">AI Healthcare Assistant</span>
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/1-3-p.png"
+            alt="AI project"
+            data-title="AWS Business Card Reader"
+            data-desc="Users upload card images, AWS Rekognition extracts text, and AWS Comprehend categorizes it. The organized data is stored in DynamoDB, allowing users to query and edit business card information seamlessly."
+            data-core="AWS Rekognition, AWS Comprehend, DynamoDB, Lambda"
+            data-link="https://github.com/HannahTech/AWS-Business-Card-Reader"
+          />
+          <span class="projects-thumb-title">AWS Business Card Reader</span>
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/1-4-p.png"
+            alt="AI project"
+            data-title="CoffeeBot Classifier"
+            data-desc="Merged JSON datasets for chatbot intent classification, investing substantial efforts in meticulous preprocessing and model optimization. Attained 100% accuracy over 500 and 1000 epochs, showcasing a commitment to excellence in TensorFlow, Keras, and scikit-learn. Demonstrated proficiency in NLP, emphasizing a dedication to achieving optimal model performance."
+            data-core="TensorFlow, Keras, NLTK, JSON"
+            data-link="https://github.com/HannahTech/CoffeeBot-Classifier"
+          />
+          <span class="projects-thumb-title">CoffeeBot Classifier</span>
+        </div>
+
+        <img class="projects-icon" src="images/2.png" alt="BIM icon" />
+        <div class="projects-text">
+          <h2>BIM &amp; Digital Twins</h2>
+          <p>Architecture, Engineering &amp; Construction (AEC) Tech</p>
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/2-1-p.png"
+            alt="BIM project"
+            data-title="Hospital Facility Intelligence"
+            data-desc="I developed a high-performance BIM Digital Twin Dashboard that synchronizes Revit spatial data with interactive 3D geometry for hospital facility management. Utilizing a custom Python (pyRevit) pipeline, I extracted 84 clinical zones and established a relational data model to map architectural anchors like doors and beds directly to a cloud-based 3D viewer. The result is a futuristic, Glassmorphism-styled interface that allows stakeholders to audit clinical density and spatial program compliance in real-time. By implementing bi-directional cross-filtering and advanced DAX measures, I transformed static BIM models into a dynamic decision-making tool that ensures 100% data integrity across complex medical environments."
+            data-core="pyRevit (Python), Revit API, Power BI, DAX"
+            data-link="https://github.com/HannahTech?tab=repositories"
+          />
+          <span class="projects-thumb-title"
+            >Hospital Facility Intelligence</span
+          >
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/2-2-p.png"
+            alt="BIM project"
+            data-title="Automated Clinical Dashboard"
+            data-desc="I developed a custom data pipeline to bridge the gap between a 2-story hospital model and an executive-level Power BI dashboard. By writing a Python-based extraction tool in pyRevit, I automated the collection of spatial data (Room Areas, Departments) and clinical equipment (Bed Counts). The project features a live 3D Digital Twin connection via Autodesk Data Exchange, allowing stakeholders to interactively audit ward density and hospital performance metrics directly through the 3D model geometry."
+            data-core="Autodesk Data Exchange, Python, Power Query"
+            data-link="https://github.com/HannahTech?tab=repositories"
+          />
+          <span class="projects-thumb-title">Automated Clinical Dashboard</span>
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/2-3-p.png"
+            alt="BIM project"
+            data-title="Hybrid BIM Logic"
+            data-desc="To ensure the automation was accessible to the entire design team, I ported the Python logic into a Dynamo script. This allowed for one-click data validation within the Revit workspace. By utilizing the Revit API inside Dynamo's Python nodes, I achieved high-performance spatial auditing that outperformed standard out-of-the-box nodes, reducing processing time for the 80+ room hospital audit by 60%."
+            data-core="Dynamo, Revit API, Python (IronPython)"
+            data-link="https://github.com/HannahTech?tab=repositories"
+          />
+          <span class="projects-thumb-title">Hybrid BIM Logic</span>
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/2-4-p.png"
+            alt="BIM project"
+            data-title="Facial Recognition"
+            data-desc="Developed a face recognition system achieving 86.21% accuracy on test data. Used PCA for dimensionality reduction and K-Means for clustering, optimizing clusters with silhouette scores. Achieved 98.5% accuracy with logistic regression and 100% with neural networks using K-Means labels. Evaluated Gaussian Mixture Models (GMM) using AIC and BIC for model comparison."
+            data-core="OpenCV, PCA, Neural Networks, Matplotlib"
+            data-link="https://github.com/HannahTech/Some-Projects"
+          />
+          <span class="projects-thumb-title">Facial Recognition</span>
+        </div>
+
+        <img class="projects-icon" src="images/3.png" alt="ML icon" />
+        <div class="projects-text">
+          <h2>Data Science &amp; ML</h2>
+          <p>Predictive modeling<br />and deep learning</p>
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/3-1-p.png"
+            alt="ML project"
+            data-title="Fraudulent Job Detection"
+            data-desc="This project uses a RandomForestClassifier to detect fraudulent job postings. Preprocessed data is transformed with TfidfVectorizer and split into training and testing sets. A pipeline is optimized using GridSearchCV. The best model is saved and deployed in a Flask app, allowing users to input job details and receive authenticity predictions."
+            data-core="RandomForest, TF-IDF, GridSearchCV, Flask"
+            data-link="https://github.com/HannahTech/fake_job_detector"
+          />
+          <span class="projects-thumb-title">Fraudulent Job Detection</span>
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/3-2-p.png"
+            alt="ML project"
+            data-title="Amazon Review Sentiment Analysis"
+            data-desc="This study enhanced sentiment analysis of Amazon reviews using NLP, TF-IDF, and comparing VADER, TextBlob, and SentiWordNet. By integrating these methods and adjusting ratings, it improved accuracy in interpreting customer sentiments across diverse datasets."
+            data-core="VADER, TextBlob, SentiWordNet, Pandas"
+            data-link="https://github.com/HannahTech/Amazon-Review-Sentiment"
+          />
+          <span class="projects-thumb-title"
+            >Amazon Review Sentiment Analysis</span
+          >
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/3-3-p.png"
+            alt="ML project"
+            data-title="Twitter Sentiment Classification"
+            data-desc="Developed a deep learning model LSTM with Conv1D for sentiment analysis, optimized the model using hyperparameter tuning, resulting in a 5% accuracy improvement (from 86.91% to 89.57%). Users insert one comment on a Flask web app and after submitting it shows one happy, neutral, or sad emoji."
+            data-core="LSTM, Conv1D, Keras, Flask"
+            data-link="https://github.com/HannahTech/Sentiment-Tweeter-Web-App"
+          />
+          <span class="projects-thumb-title"
+            >Twitter Sentiment Classification</span
+          >
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/3-4-p.png"
+            alt="ML project"
+            data-title="Sentiment Analysis IMDb"
+            data-desc="Implemented a sentiment analysis project using NLP on an IMDb movie review dataset. Developed models including a supervised deep learning model CNN and LSTM, an unsupervised autoencoder, and a pre-trained BERT model, achieving insights into sentiment classification and feature extraction."
+            data-core="BERT, Autoencoders, CNN, PyTorch"
+            data-link="https://github.com/HannahTech/SentimentAnalysis-IMDb"
+          />
+          <span class="projects-thumb-title">Sentiment Analysis IMDb</span>
+        </div>
+
+        <img class="projects-icon" src="images/4.png" alt="Web icon" />
+        <div class="projects-text">
+          <h2>Web &amp; Analytics</h2>
+          <p>Scraping, Dashboards &amp; Full-Stack development</p>
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/4-1-p.png"
+            alt="Web project"
+            data-title="React Digital Design Platform"
+            data-desc="This website is a modern, responsive digital platform built with React and Next.js, designed and developed from scratch to showcase professional web design, development, and creative solutions. The project leverages component-based architecture, API-driven pages, and Tailwind CSS for scalable styling and performance optimization. Key features include dynamic routing, user authentication, admin and customer panels, and modular page structure, demonstrating both UI/UX design expertise and full-stack front-end development capabilities."
+            data-core="React, Next.js, Tailwind CSS, REST APIs"
+            data-full="images/4.1.png"
+            data-link="https://github.com/HannahTech/LetsDesign"
+          />
+          <span class="projects-thumb-title"
+            >React Digital Design Platform</span
+          >
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/4-2-p.png"
+            alt="Web project"
+            data-title="Shein Web Intelligence"
+            data-desc="Extracting product details by web scraping the Shein website for Apple Watch bands. Uses libraries like requests and BeautifulSoup for web scraping, Spacy for natural language processing to identify materials, and stores data in both SQLite databases and CSV files. Visualizations with Matplotlib and Seaborn, offering insights into product characteristics and trends."
+            data-core="BeautifulSoup, Spacy (NLP), SQLite, Seaborn"
+            data-full="images/4.2.png"
+            data-link="https://github.com/HannahTech?tab=repositories"
+          />
+          <span class="projects-thumb-title">Shein Web Intelligence</span>
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/4-3-p.png"
+            alt="Web project"
+            data-title="Worldwide Skyscrapers Dashboard"
+            data-desc="This Excel dashboard provides a comprehensive analysis of skyscrapers around the world using Pivot Tables and interactive visuals. It highlights key insights such as the distribution of skyscrapers by country and city, building height comparisons, construction status, and year-over-year trends. Users can explore the data dynamically through slicers and filters, enabling quick comparisons and data-driven insights into global skyscraper development patterns."
+            data-core="Excel (Advanced), Pivot Tables, Slicers, Power Pivot"
+            data-full="images/4.3.png"
+            data-link="https://github.com/HannahTech?tab=repositories"
+          />
+          <span class="projects-thumb-title"
+            >Worldwide Skyscrapers Dashboard</span
+          >
+        </div>
+        <div class="projects-thumb-wrap">
+          <img
+            class="projects-thumb"
+            src="images/4-4-p.png"
+            alt="Web project"
+            data-title="Personalized Recommender System"
+            data-desc="Using the Apriori algorithm for cuisine-based recipe suggestions, and employing TF-IDF and cosine similarity for song recommendations. Demonstrated expertise in data processing, recommendation algorithms, and text analysis by cleaning data, implementing algorithms, and generating personalized recommendations through interactive user prompts."
+            data-core="Apriori Algorithm, Cosine Similarity, Scikit-learn"
+            data-full="images/4.4.png"
+            data-link="https://github.com/HannahTech/Recommender-System"
+          />
+          <span class="projects-thumb-title"
+            >Personalized Recommender System</span
+          >
+        </div>
+      </div>
+    </main>
+
+    <div class="project-modal" aria-hidden="true">
+      <div class="project-modal__overlay"></div>
+      <div class="project-modal__content" role="dialog" aria-modal="true">
+        <button class="project-modal__close" type="button" aria-label="Close">
+          ×
+        </button>
+        <div class="project-modal__media">
+          <img class="project-modal__image" src="" alt="" />
+          <p class="project-modal__core"></p>
+        </div>
+        <div class="project-modal__info">
+          <h2 class="project-modal__title"></h2>
+          <p class="project-modal__desc"></p>
+          <a
+            class="project-modal__link"
+            href=""
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
