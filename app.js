@@ -106,6 +106,16 @@ function animate() {
     }
   }
 
+  const thumbs = document.querySelectorAll(".projects-thumb-wrap");
+  if (thumbs.length) {
+    thumbs.forEach((thumb) => {
+      const rect = thumb.getBoundingClientRect();
+      if (rect.width && rect.height) {
+        ctx.clearRect(rect.left, rect.top, rect.width, rect.height);
+      }
+    });
+  }
+
   spawnParticles();
   requestAnimationFrame(animate);
 }
